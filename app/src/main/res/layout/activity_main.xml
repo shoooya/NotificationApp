@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.helloworld.notificationapp.MainActivity">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通知" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="normal" />
+
+            <Button
+                android:id="@+id/button_big_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="big icon" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="タップで起動" />
+
+
+        <Button
+            android:id="@+id/button_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="launcher" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通知オプション\n(通知の際のサウンドやバイブレーション設定)" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOUND" />
+
+            <Button
+                android:id="@+id/button_vibration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vibration" />
+
+            <Button
+                android:id="@+id/button_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="all" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="スタイル\n(表示領域に余裕があると見え方が変わる)" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_big_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="big text" />
+
+            <Button
+                android:id="@+id/button_picture_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="picture" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
